@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Hello"></div>
+    <script>
+        const reverse=(s)=>{
+            a=s.split("");
+            a.reverse("");
+            s=a.join("");
+            console.log(s);
+        }
+        let s="jasper";
+        reverse(s);
+
+        const prime=()=>{
+            let prime=true;
+            for(i=2;i<n;i++){
+                if(n%i==0){
+                    console.log(`${n} is not prime number`);
+                    prime=false;
+                    break;
+                }
+            }
+            if(prime){
+                console.log(`${n} is prime number`); 
+            }
+        }
+        let n=5;
+        prime(n);
+
+        const z=[{Name:"Jasper",Age:20},{Name:"Bennet",Age:22}];
+        for(let i=0;i<z.length;i++){
+            console.log(z[i]);
+        }
+        document.getElementById("Hello").innerHTML="Hi Jasper";
+    </script>
+</body>
+</html>
